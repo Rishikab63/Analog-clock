@@ -1,0 +1,38 @@
+#clockContainer{  
+    position: relative;  /*to make css responsive according to html*/
+    margin: auto;     /*to keep everything at center*/
+    height: 40vw;      /*keeping height and wight in viewport width so that the wage is responsive, and not in px*/
+    width: 40vw; 
+    background: url(clock.png) no-repeat;
+    background-size: 100%;             /*for the clock to fit inside the box*/
+    background-color: rgb(60, 58, 58);
+}
+
+#hour, #minute, #second{
+    position: absolute;
+    background: black;
+    border-radius: 10px; 
+    transform-origin: bottom;
+}
+#hour{
+    width: 1.8%;            /*designing the hand*/ 
+    height: 25%;
+    top: 25%;             /*setting position wrt center point*/
+    left: 48.85%;
+    opacity: 0.8;  
+}
+#minute{
+    width: 1.6%;
+    height: 30%;
+    top: 19%;
+    left: 48.9%;
+    opacity: 0.8;  
+}
+#second{
+    width: 1%;
+    height: 40%;
+    top: 9%;
+    left: 49.25%;
+    opacity: 0.8; 
+    
+}
